@@ -1,0 +1,4 @@
+card_digits = input("enter you 16 digit card number:")
+last_digits = card[-4 : ]
+space_between_digits = 'X'* 4 + ' ' 
+print( space_between_digits * 3 + last_digits)
