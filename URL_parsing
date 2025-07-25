@@ -1,0 +1,9 @@
+url = input("enter you URL:")
+protocol = url[ : url.find(':')]
+dot1 = url.find('.')
+dot2 = url.find('.' , dot1 + 1)
+domain = url[ dot1+1 : dot2]
+data = url[url.find('/', dot2): ]
+print('protocol:', protocol)
+print('domain:', domain)
+print('data:', data)
