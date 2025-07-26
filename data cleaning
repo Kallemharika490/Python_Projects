@@ -1,0 +1,8 @@
+s = "Kaggle&& is the9 world's largest dt@@ science:-community"
+clean = ''
+for x in s:
+    if x.isalpha():
+        clean = clean + x
+    else:
+        clean = clean + ' '
+print(clean)
