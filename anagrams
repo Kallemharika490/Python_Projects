@@ -1,0 +1,12 @@
+a1 = input("enter the first anagrams:")
+a2 = input("enter the second anagrams:")
+a1 = a1.lower()
+a2 = a2.lower()
+for x in a1:
+    if x.isalpha():
+       
+        if a1.count(x) != a2.count(x):
+            print("not anagrams")
+            break
+else:
+    print("anagrams")
