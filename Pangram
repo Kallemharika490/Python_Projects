@@ -1,0 +1,12 @@
+import re
+
+def alphabets(phrase):
+    letters = re.sub(r'[^a-zA-Z]', '', phrase)
+    s = letters.lower()
+    if len(s) == 26:
+        return True
+    else:
+        return False
+
+s  = 'The quick brown fox jumps over the lazy dog'
+print(alphabets(s))
